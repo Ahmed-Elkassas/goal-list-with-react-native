@@ -18,11 +18,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View  style={styles.inputContainer} >
-        <TextInput placeholder='Your course goal' style={styles.textInput} onChangeText={inputTextHandler}/>
+        <TextInput placeholder='Your course goal...' style={styles.textInput} onChangeText={inputTextHandler}/>
         <Button title='Add goal' onPress={addGoalHandler}/>
       </View>
       <View style={styles.listConatiner}>
-        {goalList.map((goal) => <Text key={goal}>{goal}</Text>)}
+        {goalList.map((goal) => <Text key={goal} style={styles.listItem}>{goal}</Text>)}
       </View>
     </View>
   );
@@ -55,5 +55,14 @@ const styles = StyleSheet.create({
   },  
   listConatiner: {
     flex: 4,
+  }, 
+  listItem: {
+    marginVertical: 8,
+    padding: 8,
+    borderWidth: 1,
+    borderColor: '#eee',
+    borderRadius: 10,
+    backgroundColor: '#A460ED',
+    color: '#fff'
   }
 });
