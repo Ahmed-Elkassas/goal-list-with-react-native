@@ -2,12 +2,11 @@ import { useState } from "react";
 import {
   Button,
   FlatList,
-  ScrollView,
   StyleSheet,
-  Text,
   TextInput,
   View,
 } from "react-native";
+import GoalInput from "./components/GoalItem";
 
 export default function App() {
   const [enteredText, setEnteredText] = useState("");
@@ -38,9 +37,7 @@ export default function App() {
         <FlatList
           data={goalList}
           renderItem={(itemData) => (
-            <View  style={styles.listItem}>
-              <Text style={styles.goalText}>{itemData.item.text}</Text>
-            </View>
+              <GoalInput text={itemData.item.text} />
           )}
           keyExtractor={(item, index) => {
             return item.id
@@ -79,15 +76,5 @@ const styles = StyleSheet.create({
   listConatiner: {
     flex: 4,
   },
-  listItem: {
-    marginVertical: 8,
-    padding: 8,
-    borderWidth: 1,
-    borderColor: "#eee",
-    borderRadius: 10,
-    backgroundColor: "#A460ED",
-  },
-  goalText: {
-    color: "#EEEEEE",
-  },
+  
 });
