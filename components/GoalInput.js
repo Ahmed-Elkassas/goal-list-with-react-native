@@ -9,6 +9,9 @@ export const GoalInput = (props) => {
       }
 
       function addGoalHandler() {
+        if(enteredText.trim().length === 0) {
+           return 
+         } 
         props.onAddGoal(enteredText);
         setEnteredText('')
       }
