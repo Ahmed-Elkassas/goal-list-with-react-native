@@ -12,7 +12,13 @@ Here're some of the project's best features:
 *   Delete a Goal
 *   Little nice animation
 
-  
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. yarn install</p>
+
+```
+npx expo start
+```
   
 <h2>💻 Built with</h2>
 
