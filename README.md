@@ -13,8 +13,13 @@ Here're some of the project's best features:
 *   Little nice animation
 
 <h2>🛠️ Installation Steps:</h2>
+<p>1. Installation</p>
 
-<p>1. yarn install</p>
+```
+yarn install
+```
+
+<p>2. Run app</p>
 
 ```
 npx expo start
