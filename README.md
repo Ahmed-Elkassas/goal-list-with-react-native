@@ -8,7 +8,7 @@
 
 Here're some of the project's best features:
 
-*   Add New Gaol
+*   Add New Goal
 *   Delete a Goal
 *   Little nice animation
 
