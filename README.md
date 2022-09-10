@@ -34,4 +34,4 @@ Technologies used in the project:
 
 <h2>💖Like my work?</h2>
 
-This app from course on udemy.com after understanding application I Created
+Created app to practice with React-native
