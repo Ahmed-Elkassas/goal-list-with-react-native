@@ -30,7 +30,7 @@ export const GoalInput = (props) => {
             <Button title="Add goal" onPress={addGoalHandler} />
           </View>
           <View style={styles.buttonStyle}>
-            <Button title="Cancel" onPress={props.onCancel} />
+            <Button title="Cancel" onPress={props.onCancel} color="#D61C4E" />
           </View>
         </View>
       </View>
