@@ -31,6 +31,7 @@ Technologies used in the project:
 
 *   React
 *   React-Native
+*   expo
 
 <h2>💖Like my work?</h2>
 
